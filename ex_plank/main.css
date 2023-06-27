@@ -1,0 +1,405 @@
+.loginContainer .signupBox, .loginContainer .loginBox {
+  width: 540px;
+  height: 600px;
+  border-radius: 28px;
+  box-shadow: 0 0 10px lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer .signupBox .signupBtn button, .loginContainer .loginBox .loginBtn button {
+  width: 100%;
+  height: 48px;
+  background-color: rgb(234, 234, 234);
+  border: 0px;
+  box-shadow: inset 0 0 4px rgb(234, 234, 234);
+  border-radius: 8px;
+  font-size: 16px;
+}
+.loginContainer .signupBox .signupBtn button:hover, .loginContainer .loginBox .loginBtn button:hover {
+  background-color: #685cec;
+  box-shadow: inset 0 0 4px #685cec;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.loginContainer .signupBox .signupProfile .profileBirth input, .loginContainer .signupBox .signupProfile .profileEmail input, .loginContainer .signupBox .signupProfile .profileName input, .loginContainer .signupBox .signupProfile .profilePwd input, .loginContainer .signupBox .signupProfile .profileId input {
+  height: 40px;
+  border: 0px;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: inset 0 0 2px lightgray;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+body .hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+nav ul .navBar {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+nav ul .navBar li {
+  display: flex;
+  align-items: center;
+}
+nav ul .navBar .navLogo {
+  padding: 16px 16px 16px 160px;
+  font-size: 20px;
+  font-weight: 500;
+}
+nav ul .navBar .navMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+nav ul .navBar .navMenuContainer .navMenu {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+}
+nav ul .navBar .navMenuContainer .navMenu:hover {
+  color: #685cec;
+}
+nav ul .navBar .navMenuContainer .dropDown:hover .dropDownContent {
+  display: block;
+}
+nav ul .navBar .navMenuContainer .dropDown .dropDownContent {
+  display: none;
+  position: absolute;
+  top: 50px;
+  min-width: 140px;
+  margin-left: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px lightgray;
+}
+nav ul .navBar .navMenuContainer .dropDown .dropDownContent div:hover {
+  color: #685cec;
+  cursor: pointer;
+}
+nav ul .navBar .navLogin {
+  padding: 16px;
+  margin-right: 150px;
+  cursor: pointer;
+}
+nav ul .navMenu .navMenuBtn {
+  position: absolute;
+  right: 32px;
+  top: 20px;
+}
+nav ul .navMenu .navMenuBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.mainContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: "Nanum Gothic", sans-serif;
+  color: white;
+}
+.mainContainer h1 {
+  position: relative;
+  font-size: 6vw;
+  font-weight: 700;
+  top: 100px;
+  left: 100px;
+  margin-bottom: 30px;
+}
+.mainContainer h2 {
+  position: relative;
+  width: 50%;
+  top: 100px;
+  left: 100px;
+  margin-bottom: 24px;
+}
+.mainContainer button {
+  position: relative;
+  top: 100px;
+  left: 100px;
+  width: 110px;
+  height: 40px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+.mainContainer button:hover {
+  background-color: #685cec;
+  transition: 0.4s;
+}
+.mainContainer button:hover a {
+  color: white;
+  transition: 0.4s;
+}
+
+.loginContainer {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  height: 100vh;
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 26px;
+}
+.loginContainer .loginBox .loginLogo {
+  font-family: "Heebo", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 24px;
+}
+.loginContainer .loginBox .loginInput {
+  width: 72%;
+  margin-bottom: 18px;
+}
+.loginContainer .loginBox .loginInput div {
+  position: relative;
+}
+.loginContainer .loginBox .loginInput div input {
+  margin: 0px;
+  width: 100%;
+  height: 48px;
+  display: block;
+  border: 0px;
+  box-shadow: inset 0 0 4px lightgray;
+  padding: 0px 10px 0px 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+.loginContainer .loginBox .loginInput div input:focus {
+  box-shadow: inset 0 0 4px #685cec;
+}
+.loginContainer .loginBox .loginInput div img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #a9a9a9);
+}
+.loginContainer .loginBox .loginInput div:nth-child(1) input {
+  border-radius: 8px 8px 0px 0px;
+}
+.loginContainer .loginBox .loginInput div:nth-child(2) input {
+  border-radius: 0px 0px 8px 8px;
+}
+.loginContainer .loginBox .loginBtn {
+  width: 72%;
+  margin-bottom: 14px;
+}
+.loginContainer .loginBox .loginEtcBtn {
+  font-size: 14px;
+  margin-bottom: 50px;
+  color: #a9a9a9;
+}
+.loginContainer .loginBox .loginEtcBtn span:nth-child(2n+1):hover {
+  cursor: pointer;
+  color: #685cec;
+  transition: 0.2s;
+}
+.loginContainer .signupBox {
+  height: 700px;
+}
+.loginContainer .signupBox .signupDescription {
+  width: 100%;
+  padding-left: 18%;
+  margin: 64px 0px 18px 0px;
+}
+.loginContainer .signupBox .signupDescription div:nth-child(1) {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.loginContainer .signupBox .signupProfile {
+  width: 100%;
+  padding-left: 18%;
+}
+.loginContainer .signupBox .signupProfile input {
+  font-family: "Nanum Gothic", sans-serif;
+}
+.loginContainer .signupBox .signupProfile .notice {
+  width: 100%;
+  height: 10px;
+  font-size: 12px;
+  color: red;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile label {
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+}
+.loginContainer .signupBox .signupProfile .profileId {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profileId input {
+  width: 80%;
+}
+.loginContainer .signupBox .signupProfile .profilePwd {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profilePwd input {
+  width: 80%;
+}
+.loginContainer .signupBox .signupProfile .profilePwd input:nth-child(2) {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profilePwd .notice:nth-child(3) {
+  margin-top: 0px;
+}
+.loginContainer .signupBox .signupProfile .profileName {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profileName input {
+  width: 80%;
+}
+.loginContainer .signupBox .signupProfile .profileEmail {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profileEmail input {
+  width: 30%;
+}
+.loginContainer .signupBox .signupProfile .profileBirth {
+  margin-bottom: 8px;
+}
+.loginContainer .signupBox .signupProfile .profileBirth input {
+  width: 30%;
+}
+.loginContainer .signupBox .signupBtn {
+  width: 84%;
+  margin: 18px 0px 64px 0px;
+}
+.loginContainer .hidden {
+  display: none;
+}
+
+.tutorialContainer .tutorialBox {
+  display: flex;
+  justify-content: center;
+}
+.tutorialContainer .tutorialBox .tutorialVideo {
+  width: 80%;
+  height: 45.04vw;
+  margin-top: 80px;
+}
+.tutorialContainer .tutorialBox .visibilityHidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  border: 0px;
+  border: none;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul .navBar .navLogo {
+    position: absolute;
+    left: 0px;
+    padding: 16px 16px 16px 32px;
+  }
+  nav ul .navBar li:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+  }
+  nav ul .navBar li:nth-child(2) .navMenuContainer {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    border-top: 0.2px solid #685cec;
+    display: none;
+  }
+  nav ul .navBar li:nth-child(2) .navMenuContainer .dropDown:hover .dropDownContent {
+    display: none;
+    align-items: center;
+  }
+  nav ul .navBar li:nth-child(2) .navMenuContainer .navMenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.2px solid #685cec;
+  }
+  nav ul .navBar li:nth-child(2) .navMenuContainer .navMenu:hover {
+    background-color: #685cec;
+    color: white;
+    transition: 0.2s;
+  }
+  nav ul .navBar li:nth-child(2) .active {
+    display: block;
+  }
+  nav ul .navBar .navLogin {
+    position: absolute;
+    padding: 16px;
+    margin: 0px;
+    right: 64px;
+    top: 4px;
+  }
+  nav ul .navMenu {
+    display: block;
+  }
+  .mainContainer h1 {
+    left: 50px;
+    font-size: 7vw;
+  }
+  .mainContainer h2 {
+    left: 50px;
+    word-break: break-all;
+    font-size: 20px;
+  }
+  .mainContainer button {
+    left: 50px;
+  }
+  .loginContainer .loginBox {
+    width: 80%;
+    max-width: 540px;
+  }
+  .loginContainer .signupBox {
+    width: 80%;
+    max-width: 540px;
+  }
+}/*# sourceMappingURL=main.css.map */
